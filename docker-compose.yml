@@ -3,7 +3,7 @@ services:
     build:
       context: auth0
       dockerfile: Dockerfile
-    image: scalis/mock-v2-auth0
+    image: scalis/mock-auth0
     networks:
       - scalis
     ports:
