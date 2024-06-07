@@ -1,14 +1,9 @@
 services:
-  app:
+  auth0:
     build:
-      context: .
+      context: auth0
       dockerfile: Dockerfile
     image: scalis/mock-v2-auth0
-    # command: python mock_auth0_server.py run -h 0.0.0.0
-    # restart: unless-stopped
-    # env_file: .env.development
-    # environment:
-    #   DATABASE_URL: postgres://dbuser:dbpass@db/dbname
     networks:
       - scalis
     ports:
