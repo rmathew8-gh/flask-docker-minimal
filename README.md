@@ -16,3 +16,7 @@ It will download latest python image and Flask, and then start publicly availabl
   ![screen](https://user-images.githubusercontent.com/26604491/101266022-302d7c80-3754-11eb-8395-2149a639e88e.png)
   <summary>Opened in browser</summary>
 </details>
+
+## this is what works!
+docker run -p 5010:5000 -d roy/minimal-flask
+curl localhost:5010
