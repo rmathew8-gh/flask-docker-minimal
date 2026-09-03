@@ -1,12 +1,8 @@
-#+setupfile: ~/.org-mode-goodies/setup.org
-
-** how to build
+** how to run
 #+begin_src sh
-docker-compose build -q
-docker-compose up
+docker compose up --build
 
 curl localhost:5001/
 curl localhost:5001/hello
-curl -d '{}' -H "Content-Type: application/json" -X POST localhost:5001/oauth/token
+curl localhost:5001/health
 #+end_src
-

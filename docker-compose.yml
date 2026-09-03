@@ -1,14 +1,5 @@
 services:
-  auth0:
-    build:
-      context: auth0
-      dockerfile: Dockerfile
-    image: scalis/mock-auth0
-    networks:
-      - scalis
+  app:
+    build: ./app
     ports:
-      - 5001:5001
-
-networks:
-  scalis:
-    driver: bridge
+      - "5001:5001"
